@@ -2,6 +2,10 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -60,14 +64,8 @@ footer img {
     margin-bottom: 20px;
 }
 
-.about-mini p{
-}
-
 .about-mini{
     width: 70%;
-}
-
-.about-title {
 }
 
 .about-nav {
@@ -79,30 +77,23 @@ li {
     margin-top: 8px;
 }
 
-ul {
-
-}
-
-.about-text, .cv{
-    padding-left: 600px;
+.about-text, .cv, .projects{
+    width: 60%;
+    float: right;
 }
 
 .cv {
     margin-top: 10vw;
 }
 
-.cv-card {
-
-}
-
 .time {
     padding-top: 3px;
     color: rgba(255, 255, 255, 0.5);
-    font-size: 1.4vh;
+    font-size: 0.75rem;
     width: 400px;
 }
 
-.cv-head {
+.cv-head, .project-head {
     color: white;
 }
 
@@ -124,4 +115,61 @@ ul {
     color: #3FD3C6;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.project-card {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.project-img-container {
+    margin-right: 15px;
+}
+
+.project-img-container img {
+    width: 160px;
+    float: top;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        position: static;
+        width: 100%;
+        height: auto;
+
+    }
+
+    footer img {
+        margin-top: 2vh;
+    }
+
+    .about-mini {
+        width: 100%;
+        
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    .about-text,
+    .cv, .projects {
+        width: 100%;
+        float: none;
+        margin-top: 2rem;
+    }
+
+    .cv {
+        margin-top: 4rem
+    }
+
+    .about-nav {
+        display: none;
+    }
+
+    .project-content {
+        padding-left: 20px;
+    }
 }
